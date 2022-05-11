@@ -13,9 +13,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('앱바'),),
-      body: ,
-      bottomNavigationBar: ,
+      appBar: AppBar(
+        title: Text('AppBar')
+        ),
+      body: Text('Hello'),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Icon(Icons.phone),
+            Icon(Icons.message),
+            Icon(Icons.contact_page)
+        ],),
+      ),
     );
   }
 }
