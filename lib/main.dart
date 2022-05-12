@@ -16,16 +16,14 @@ class MyApp extends StatelessWidget {
       appBar: AppBar(
         title: Text('AppBar')
         ),
-      body: Text('Hello'),
-      bottomNavigationBar: BottomAppBar(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Icon(Icons.phone),
-            Icon(Icons.message),
-            Icon(Icons.contact_page)
-        ],),
-      ),
+      body: Align(
+        alignment: Alignment.center,
+        child: Container(
+          width: 50,
+          height: 50,
+          color: Colors.blue
+        ),
+      )
     );
   }
 }
